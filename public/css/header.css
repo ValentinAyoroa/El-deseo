@@ -2,25 +2,26 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-header{
+header {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
-.container-header{
+.container-header {
   font-family: 'Bebas Neue', cursive;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: white;
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
-.nav-bar-header{
+.nav-bar-header {
   display: flex;
   align-self: flex-end;
   align-items: flex-end;
@@ -29,26 +30,26 @@ header{
   margin-right: 70px;
 }
 
-.nav-bar-item{
+.nav-bar-item {
   margin: 10px 50px;
   transition: all;
 }
 
-.nav-bar-item:hover{
-    border-bottom: 2px solid #081b00;
+.nav-bar-item:hover {
+  border-bottom: 2px solid #081b00;
 }
 
-.nav-bar-link{
+.nav-bar-link {
   text-decoration: none;
   font-size: 25px;
   color: black;
 }
 
-.logo-header{
+.logo-header {
   width: 170px;
   margin: 20px 0 20px 70px;
 }
 
-p{
-  z-index: 50 ;
+p {
+  z-index: 50;
 }
