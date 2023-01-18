@@ -9,7 +9,7 @@
     <!--header-->
     <%- include('./partials/header.ejs') %>
       <main>
-        <section class="inicio-home">
+        <section id='inicio' class="inicio-home">
           <div class="slider">
             <ul>
               <li class="slider-item">
@@ -32,10 +32,11 @@
           <div class="slider-text">
             <h2>VENI A DISFRUTAR TU ESTADIA</h2>
             <p>Aquí encontrarás a la naturaleza, al misterio y te llenarás de energía</p>
-            <button>Solamente es necesario que hagas realidad <span class="deseo">TU DESEO</span></button>
+            <button><a href="#contacto">Solo es necesario que hagas realidad <span class="deseo">TU
+                  DESEO</span></a></button>
           </div>
         </section>
-        <section class="info-home">
+        <section id='info' class="info-home">
           <h2 class="title">Informacion sobre las cabañas</h2>
           <div class="info">
             <ul>
@@ -59,8 +60,103 @@
             </ul>
           </div>
         </section>
-        <p style="font-size: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nam officiis atque nobis quasi laborum nemo id dolor ducimus dolorem accusantium obcaecati. Quasi eum officiis unde consequuntur odio, nisi quos!</p>
+        <section id='imagenes' class="images-home">
+          <div class="container-images">
+            <h2>Algunas imagenes de lo que son nuestras cabañas</h2>
+            <div>
+              <img class="image-muestra" src="/images/Eldeseo1.jpg">
+            </div>
+            <div class="images">
+              <img class="home-image" src="/images/Eldeseo1.jpg">
+              <img class="home-image" src="/images/Eldeseo2.jpg">
+              <img class="home-image" src="/images/Eldeseo3.jpg">
+              <img class="home-image" src="/images/Eldeseo4.jpg">
+            </div>
+            <button class="mostrar-mas">MOSTRAR MAS IMAGENES</button>
+          </div>
+        </section>
+        <section id='ubicacion' class="ubicacion-home">
+          <div class="container-ubicacion">
+            <div class="container-ubicacion-info">
+              <div class="left-side">
+                <h2 class="direccion">ALMIRANTE BROWN 246 - Bº CENTRO - CAPILLA DEL MONTE - CÓRDOBA</h2>
+                <div class="mapa">
+                  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HeIEAx998F1vy32IVIHSTRU6W3tBbEI&ehbc=2E312F"
+                    width="640" height="480"></iframe>
+                </div>
+              </div>
+
+              <div class="rigth-side">
+                <div class="container-title-ubicacion">
+                  <h2>Capilla del Monte</h2>
+                  <p>Te espera todo el año!</p>
+                </div>
+                <p class="info-ubicacion">Capilla del Monte es una ciudad y municipio argentino del departamento Punilla,
+                  Provincia de Córdoba, a 109 km de la ciudad de Córdoba y a 725 km de Buenos Aires. Es muy conocida por
+                  estar ubicada al pie del Cerro Uritorco.<br>
+
+                  <br>En Capilla del Monte el clima se encuentra en la clasificación subtropical, con particularidades en
+                  su
+                  zona y por ello recibe el nombre de clima templado serrano ( micro-clima) . La temperatura mínima en el
+                  invierno es de 3,5º y 4,5ºcentígrados. En verano las marcas medias alcanzan aproximadamente los 29 a 30º
+                  durante el día, refrescando por las noches. La media anual es de 17º centígrados . Durante el invierno
+                  el
+                  clima se torna frío y seco, y las heladas se producen entre los meses de mayo a septiembre.<br>
+
+                  <br>NOMINA DE LOS PASEOS Cerro Uritorco, Cerro Las Gemelas, Cerro Overo, Cerro Mina, Cerro Piscoro,
+                  Dique
+                  Los
+                  Alazanes, Quebrada de Luna, Huertas Malas, Cascada Gigante, Cascada de las Golondrinas, Arroyo Los
+                  Quemados y Los Terrones, Agua de los Palos, Minas de Mica y Cuerzo, Mesa de Rituales, Ollas del Río de
+                  la
+                  Plata, Pampillas y Totoralejo, Aguila Blanca, Dique El Cajón, Los Mogotes, Los Paredones, La Toma,
+                  Faldas
+                  del Uritorco y Villa Cielo. Agua de los Palos, Minas de Mica y Cuerzo, Mesa de Rituales, Ollas del Río
+                  de
+                  la Plata, Pampillas y Totoralejo, Aguila Blanca, Dique El Cajón, Los Mogotes, Los Paredones, La Toma,
+                  Faldas del Uritorco y Villa Cielo. Aguila Blanca, Dique El Cajón, Los Mogotes, Los Paredones, La Toma,
+                  Faldas del Uritorco y Villa Cielo.
+                </p>
+              </div>
+            </div>
+            <div class="container-ubication-images">
+              <img src="images/capilla.jpg">
+              <img src="images/capilla2.jpg">
+              <img src="images/capilla3.jpg">
+              <img src="images/capilla4.jpg">
+              <img src="images/capilla6.webp">
+            </div>
+          </div>
+        </section>
       </main>
   </body>
+  <script src="/javascripts/slider.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
 
 </html>

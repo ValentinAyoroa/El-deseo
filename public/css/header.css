@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  position: sticky;
+  position:sticky;
   top: 0;
   z-index: 1;
 }
@@ -28,6 +28,7 @@ header {
   list-style: none;
   height: 70px;
   margin-right: 70px;
+  margin-top: 0px;
 }
 
 .nav-bar-item {
@@ -46,7 +47,7 @@ header {
 }
 
 .logo-header {
-  width: 170px;
+  width: 100px;
   margin: 20px 0 20px 70px;
 }
 
