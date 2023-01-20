@@ -3,10 +3,10 @@ const controller = require('../controllers/home');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('home', { title: 'Express' });
-});
 
-router.get('/prueba', controller.prueba )
+router.get('/', controller.home);
+
+router.get('/contacto', controller.contacto);
+
 
 module.exports = router;

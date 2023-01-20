@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--head-->
+<%- include('./partials/head.ejs') %>
+
+    <body>
+        <!--header-->
+        <%- include('./partials/header.ejs') %>
+
+            <main class="contacto">
+                <div class="overlay">
+                    <div class="container-contacto">
+                        <h2>Contactate con nosotros!</h2>
+                        <div class="form-contacto">
+                            <form id="form">
+                                <div class="field">
+                                    <label for="emailjs_name">Nombre</label><br>
+                                    <input type="text" name="emailjs_name" id="emailjs_name">
+                                </div>
+                                <div class="field">
+                                    <label for="emailjs_surname">Apellido</label><br>
+                                    <input type="text" name="emailjs_surname" id="emailjs_surname">
+                                </div>
+                                <div class="field">
+                                    <label for="emailjs_email">Email</label><br>
+                                    <input type="text" name="emailjs_email" id="emailjs_email">
+                                </div>
+                                <div class="field">
+                                    <label for="emailjs_cel">Celular</label><br>
+                                    <input type="text" name="emailjs_cel" id="emailjs_cel">
+                                </div>
+                                <div class="field">
+                                    <label for="emailjs_msg">Consulta</label><br>
+                                    <textarea id="emailjs_msg" name="emailjs_msg"></textarea>
+                                </div>
+
+                                <button class="contact-button" type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!--footer-->
+            <%- include('./partials/footer.ejs') %>
+    </body>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('VazS7y9Og7TnbvmsC')
+    </script>
+    <script src="/javascripts/email.js"></script>
+
+</html>

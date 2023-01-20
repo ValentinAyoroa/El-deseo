@@ -1,0 +1,21 @@
+footer div{
+    display: flex;
+    padding-top: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.afip-image{
+    width: 60px;
+    margin-left: 50px;
+}
+
+.copy{
+    margin: 16px;
+    letter-spacing: 2px;
+}
+
+.copy a{
+    text-decoration: none;
+    color: rgb(206, 0, 0)
+}

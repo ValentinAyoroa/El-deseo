@@ -200,11 +200,10 @@ body {
 }
 
 .container-ubicacion{
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     text-align: center;
     background-color: rgb(243, 243, 243);
-    margin: 100px 0;
-    padding: 150px 0;
+    margin: 100px 0 0 0;
+    padding: 150px 0 50px 0 ;
 }
 
 .container-ubicacion-info{
@@ -252,7 +251,7 @@ body {
 
 .container-ubication-images img{
     width: 250px;
-    border-radius: 80%;
+    border-radius: 100%;
     margin: 40px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }

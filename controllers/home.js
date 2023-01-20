@@ -1,5 +1,9 @@
 module.exports = {
-    prueba: function( req, res){
-        res.render('prueba')
+    home: function( req, res){
+        res.render('home')
+    },
+
+    contacto: function( req, res){
+        res.render('contacto')
     }
 }
