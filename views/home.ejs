@@ -62,14 +62,19 @@
         <section id='imagenes' class="images-home">
           <div class="container-images">
             <h2>Algunas imagenes de lo que son nuestras cabañas</h2>
-            <div>
+            <div class="container-muestra">
+              <p> < </p>
               <img class="image-muestra" src="/images/Eldeseo1.jpg">
+              <p>></p>
             </div>
             <div class="images">
               <img class="home-image" src="/images/Eldeseo1.jpg">
               <img class="home-image" src="/images/Eldeseo2.jpg">
               <img class="home-image" src="/images/Eldeseo3.jpg">
               <img class="home-image" src="/images/Eldeseo4.jpg">
+              <% for(i = 5 ; i <= 13 ; i++ ) { %>
+                <img class="home-image-muestra" src= <%= "/images/Eldeseo" + i + ".jpg" %>>
+              <% } %>
             </div>
             <button class="mostrar-mas">MOSTRAR MAS IMAGENES</button>
           </div>
