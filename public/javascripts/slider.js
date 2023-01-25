@@ -5,7 +5,8 @@ window.onload = function () {
     const imagenes = document.querySelectorAll('.home-image')
     const imagenesMuestra = document.querySelectorAll('.home-image-muestra')
     const btn = document.querySelector('.mostrar-mas');
-    const passBtn = document.querySelectorAll('.container-muestra p')
+    const passBtn = document.querySelectorAll('.button-muestra button')
+    let contador = 1
     
     imagenes.forEach(function(imagen){
         imagen.addEventListener('click' , (e) => {
@@ -30,16 +31,15 @@ window.onload = function () {
     })
 
     passBtn.forEach(function(btn){
-        let contador = 1
         btn.addEventListener('click' , (e) => {
-            if(btn.innerText == '>'){
+
+            if(btn.innerText == 'Siguiente' && contador < 13 ){
                 contador = contador + 1
                 image.src = '/images/Eldeseo'+ contador +'.jpg'
 
-            }else if(btn.innerText == '<'){
-                click = click - 1 
-                console.log(click);
-                image.src = '/images/Eldeseo'+ click +'.jpg'
+            }else if(btn.innerText == 'Anterior' && contador > 1){
+                contador = contador - 1
+                image.src = '/images/Eldeseo'+ contador +'.jpg'
             }
             
         })

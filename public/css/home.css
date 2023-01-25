@@ -166,20 +166,24 @@ body {
     flex-wrap: wrap;
 }
 
-.container-muestra{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-muestra p{
-    font-size: 50px;
+.button-muestra button{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 0px 100px;
+    width: 200px;
+    padding: 10px;
+    background-color: #8b5400;
+    border-radius: 5px;
+    border: 1px solid #FF9900;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 
 .image-muestra{
-    width: 600px;
-    height: 400px;
+    width: 800px;
+    height: 500px;
     margin: 50px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
