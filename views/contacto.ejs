@@ -14,25 +14,33 @@
                         <h2>Contactate con nosotros!</h2>
                         <div class="form-contacto">
                             <form id="form">
-                                <div class="field">
+                                <div class="field grupo-name">
                                     <label for="emailjs_name">Nombre</label><br>
-                                    <input type="text" name="emailjs_name" id="emailjs_name">
+                                    <input class='inputs' type="text" name="emailjs_name" id="emailjs_name">
+                                    <p class="error"></p>
                                 </div>
-                                <div class="field">
+                                <div class="field grupo-surname">
                                     <label for="emailjs_surname">Apellido</label><br>
-                                    <input type="text" name="emailjs_surname" id="emailjs_surname">
+                                    <input class='inputs' type="text" name="emailjs_surname" id="emailjs_surname">
+                                    <p class="error"></p>
                                 </div>
-                                <div class="field">
+                                <div class="field grupo-email">
                                     <label for="emailjs_email">Email</label><br>
-                                    <input type="text" name="emailjs_email" id="emailjs_email">
+                                    <input class='inputs' type="text" name="emailjs_email" id="emailjs_email">
+                                    <p class="error"></p>
                                 </div>
-                                <div class="field">
+                                <div class="field grupo-celular">
                                     <label for="emailjs_cel">Celular</label><br>
-                                    <input type="text" name="emailjs_cel" id="emailjs_cel">
+                                    <input class='inputs' type="text" name="emailjs_cel" id="emailjs_cel">
+                                    <p class="error"></p>
                                 </div>
-                                <div class="field">
+                                <div class="field grupo-consulta">
                                     <label for="emailjs_msg">Consulta</label><br>
-                                    <textarea id="emailjs_msg" name="emailjs_msg"></textarea>
+                                    <textarea class='inputs' id="emailjs_msg" name="emailjs_msg"></textarea>
+                                    <p class="error"></p>
+                                </div>
+                                <div class="error-all">
+                                <p class="error"></p>
                                 </div>
 
                                 <button class="contact-button" type="submit">Enviar</button>

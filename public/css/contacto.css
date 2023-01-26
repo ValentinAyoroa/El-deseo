@@ -75,3 +75,18 @@ textarea:focus{
     font-size: 20px;
     border-radius: 10px;
 }
+
+/*VALIDACIONES*/ 
+
+.error-validation input {
+    border-bottom: 1px red solid;
+}
+
+.error-validation textarea {
+    border: 1px red solid;
+}
+
+
+.error, .error{
+    color: red;
+}
